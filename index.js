@@ -33,3 +33,14 @@ function square (num, callback){
 }
 square(4, function (result){return console.log("square is",result);
 console.log("I am located after the return")});
+//section 3
+const fs = require("fs");
+
+
+let promise = new Promise( function (resolve, reject) {
+  fs.readFile("code.js","utf-8",function (err,data)
+    {
+      if(err) return console.log(err);
+      else console.log(data);
+    });
+});
