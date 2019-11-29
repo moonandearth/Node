@@ -26,3 +26,9 @@ function execute (a,b,method){
 }
 console.log("sum is ", execute(5,3,sum));
 console.log("Product is ",execute(5,3,mul));
+// section 2
+function square (num, callback){
+  let res = num*num;
+  callback(res);
+}
+square(4, function (result){console.log("square is",result)});
