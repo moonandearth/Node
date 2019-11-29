@@ -67,3 +67,15 @@ promise.then(function (data){
     }
   ).listen(8000);
   console.log('listening on port 8080');
+
+  const express = require('express');
+  const app = express();
+  app.get('/', function (req, res){
+
+    res.send('http://www.google.com')
+  });
+  app.listen(3000);
+
+  // other way of writing function
+
+  var sm = (a,b) => { return a+b;}
