@@ -40,7 +40,30 @@ const fs = require("fs");
 let promise = new Promise( function (resolve, reject) {
   fs.readFile("code.js","utf-8",function (err,data)
     {
-      if(err) return console.log(err);
-      else console.log(data);
+      if(err) reject(err);
+      else resolve(data);
     });
 });
+promise.then(function (data){
+  
+  console.log(data)
+
+  ;}).catch(function (err){
+
+  console.log(err);})
+// section 4
+  var http = require('http');
+  http.createServer( function (req,res)
+  {
+      res.writeHead(200,{'Content-Type':'text/plain'});
+      if(req.url == '/about')
+      {
+        res.write('Hello World !');
+      }
+      else{
+        res.write("hello");
+      }
+      res.end();
+    }
+  ).listen(8000);
+  console.log('listening on port 8080');
