@@ -10,6 +10,12 @@ var summul = function(a, b) {
 
 }
 summul(2,5);
+
+let m = mul(2,5);
+
+console.log("product is :",m);
+console.log("product is : %d",m);
+
 // const fs = require('fs');
 // fs.readFile('index.js', function(err, data) {
 //   if (err) { return console.log(err); }
