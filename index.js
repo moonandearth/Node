@@ -18,8 +18,5 @@ console.log(mul(5,function(){return 4;}));
 console.log("product is :",m);
 console.log("product is : %d",m);
 
-// const fs = require('fs');
-// fs.readFile('index.js', function(err, data) {
-//   if (err) { return console.log(err); }
-//   else { return data; }
-// });
+var d = function(a,b){return a/b;}(5,2);
+console.log("Division is ",d);
