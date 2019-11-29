@@ -20,3 +20,9 @@ console.log("product is : %d",m);
 
 var d = function(a,b){return a/b;}(5,2);
 console.log("Division is ",d);
+//section 1
+function execute (a,b,method){
+  return method(a,b);
+}
+console.log("sum is ", execute(5,3,sum));
+console.log("Product is ",execute(5,3,mul));
