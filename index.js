@@ -13,6 +13,8 @@ summul(2,5);
 
 let m = mul(2,5);
 
+console.log(mul(5,function(){return 4;}));
+
 console.log("product is :",m);
 console.log("product is : %d",m);
 
