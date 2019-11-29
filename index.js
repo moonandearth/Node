@@ -31,4 +31,5 @@ function square (num, callback){
   let res = num*num;
   callback(res);
 }
-square(4, function (result){console.log("square is",result)});
+square(4, function (result){return console.log("square is",result);
+console.log("I am located after the return")});
