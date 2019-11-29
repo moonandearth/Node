@@ -9,8 +9,9 @@ var summul = function(a, b) {
   console.log(mul(a, b));
 
 }
-const fs = require('fs');
-fs.readFile('index.js', function(err, data) {
-  if (err) { return console.log(err); }
-  else { return data; }
-});
+summul(2,5);
+// const fs = require('fs');
+// fs.readFile('index.js', function(err, data) {
+//   if (err) { return console.log(err); }
+//   else { return data; }
+// });
